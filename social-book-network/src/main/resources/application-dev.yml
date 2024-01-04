@@ -16,8 +16,8 @@ spring:
   mail:
     host: localhost
     port: 1025
-    username: chanuth
-    password: chanuth
+    username: postgres
+    password: 1234
     properties:
       mail:
         smtp:
