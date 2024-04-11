@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/social_book_network
-    username: username
-    password: password
+    url: jdbc:postgresql://localhost:5432/book_social_network
+    username: postgres
+    password: 1234
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -16,8 +16,8 @@ spring:
   mail:
     host: localhost
     port: 1025
-    username: postgres
-    password: 1234
+    username: ali
+    password: ali
     properties:
       mail:
         smtp:
@@ -28,14 +28,14 @@ spring:
         connectiontimeout: 5000
         timeout: 3000
         writetimeout: 5000
-#  security:
-#    oauth2:
-#      resourceserver:
-#        jwt:
-#          issuer-uri: "http://localhost:9090/realms/book-social-network"
-#application:
-#  file:
-#    uploads:
-#      photos-output-path: ./uploads
-#server:
-#  port: 8088
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: "http://localhost:9090/realms/book-social-network"
+application:
+  file:
+    uploads:
+      photos-output-path: ./uploads
+server:
+  port: 8088
